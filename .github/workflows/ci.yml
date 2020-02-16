@@ -20,7 +20,7 @@ jobs:
     - name: Run tests with coverage
       run: dotnet test --no-build --collect:"XPlat Code Coverage"      
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@0.0.1
+      uses: danielpalme/ReportGenerator-GitHub-Action@0.0.2
       with:
         reports: '*Test/TestResults/*/coverage.cobertura.xml'
         targetdir: 'CoverageReports'
