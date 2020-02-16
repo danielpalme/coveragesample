@@ -19,8 +19,16 @@ jobs:
       run: dotnet build
     - name: Run tests with coverage
       run: dotnet test --no-build --collect:"XPlat Code Coverage"      
-    - name: Create coverage report
-      run: dotnet reportgenerator "-reports:*Test/TestResults/*/coverage.cobertura.xml" "-targetdir:CoverageReports" "-reporttypes:Html;Cobertura"
+    - name: reportgenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@0.0.1
+      with:
+        reports: '*Test/TestResults/*/coverage.cobertura.xml'
+        targetdir: 'CoverageReports'
+        reporttypes: 'HtmlInline;Cobertura'
+    - name: Upload artifact
+		reports: '*Test/TestResults/*/coverage.cobertura.xml'
+		targetdir: 'CoverageReports'
+		reporttypes: 'HtmlInline;Cobertura'
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
