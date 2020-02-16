@@ -20,7 +20,7 @@ jobs:
     - name: Run tests with coverage
       run: dotnet test --no-build --collect:"XPlat Code Coverage"      
     - name: Create coverage report
-      run: reportgenerator -reports:*Test\TestResults\*\coverage.cobertura.xml -reporttypes:Html;Cobertura -targetdir:CoverageReports
+      run: dotnet reportgenerator -reports:*Test\TestResults\*\coverage.cobertura.xml -reporttypes:Html;Cobertura -targetdir:CoverageReports
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
