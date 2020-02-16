@@ -20,11 +20,12 @@ jobs:
     - name: Run tests with coverage
       run: dotnet test --no-build --collect:"XPlat Code Coverage"      
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@0.0.2
+      uses: danielpalme/ReportGenerator-GitHub-Action@0.0.3
       with:
         reports: '*Test/TestResults/*/coverage.cobertura.xml'
         targetdir: 'CoverageReports'
         reporttypes: 'HtmlInline;Cobertura'
+        verbosity: 'Verbose'
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
