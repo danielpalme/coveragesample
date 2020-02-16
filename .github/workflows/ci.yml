@@ -26,10 +26,6 @@ jobs:
         targetdir: 'CoverageReports'
         reporttypes: 'HtmlInline;Cobertura'
     - name: Upload artifact
-		reports: '*Test/TestResults/*/coverage.cobertura.xml'
-		targetdir: 'CoverageReports'
-		reporttypes: 'HtmlInline;Cobertura'
-    - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
         # Artifact name
