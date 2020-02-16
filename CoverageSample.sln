@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageSample", "CoverageSample\CoverageSample.csproj", "{99C6AE21-AE0A-4352-963F-8C289A0252F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageSample.Test", "CoverageSample.Test\CoverageSample.Test.csproj", "{AAC59283-03FC-4493-A256-2437F74EC070}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99C6AE21-AE0A-4352-963F-8C289A0252F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C6AE21-AE0A-4352-963F-8C289A0252F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C6AE21-AE0A-4352-963F-8C289A0252F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C6AE21-AE0A-4352-963F-8C289A0252F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC59283-03FC-4493-A256-2437F74EC070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC59283-03FC-4493-A256-2437F74EC070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC59283-03FC-4493-A256-2437F74EC070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC59283-03FC-4493-A256-2437F74EC070}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {638F402F-A25E-4B1F-923B-C7ECF4DCFCD7}
+	EndGlobalSection
+EndGlobal
